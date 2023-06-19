@@ -1,38 +1,64 @@
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title> Infierno</title>
     <link rel="shortcut icon" href="imagenes/demonio.png" type="image/x-icon">
 
-    <!--Css: Estilos visuales-->
-    <link rel="stylesheet" href="estilos.css">
+<style> /*Css: Estilos visuales*/
+    body{
+        /*Fondo de pantalla*/
+        width: 2700px;
+        padding: 0px 10px;
+        margin: 50px ;
+        text-align: center;
+        background-image: url("imagenes/fondo.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        }
+    .game-container {
+    display: grid;
+    margin: 10px auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 80px;
+    padding: 150px;
+    width: 2500px;
+    }
+
+    .card {
+    border: 10px solid #ccc;
+    padding: 120px;
+    text-align: center;
+    }
+
+</style>
+
 </head>
-<body>
-    <!--Html: Estructura Visual-->
-
-    <div id="Tablero">
-        <div class="area-tarjeta">
-            <div class="tarjeta">
-                <div class="cara-trasera">
-                </div> 
-                <div class="cara-superior">
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-
-
-
+<body> <!--Html: Estructura Visual-->
+    <!--Recuadro-->
+    <h1 style="color: rgb(241, 18, 18);box-shadow: 0 4px 25px 0 #0c0d0dbd;background-color: rgba(58, 19, 2, 0.016);">
+        LA DIVINA COMEDIA
+    </h1>
+    <!--Tarjetas-->
+    <div class="game-container">
+        <div class="card"><img src="imagenes/demonio.png" alt=""></div>
+        <div class="card"><img src="" alt=""></div>
+        <div class="card"><img src="" alt=""></div>
+        <div class="card"><img src="" alt=""></div> 
+        <div class="card"><img src="" alt=""></div>
+        <div class="card"><img src="" alt=""></div>
+        <div class="card"><img src="" alt=""></div> 
+        <div class="card"><img src="" alt=""></div>
+        <div class="card"><img src="" alt=""></div>
+        <div class="card"><img src="" alt=""></div> 
+        <div class="card"><img src="" alt=""></div>
+        <div class="card"><img src="" alt=""></div>
 
     <!--JS-->
-    <script>
-
-    </script>
-
-
+<script></script>
 
 </body>
 </html>
+
