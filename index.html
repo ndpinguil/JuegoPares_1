@@ -4,14 +4,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title> Infierno</title>
-    <link rel="shortcut icon" href="imagenes/demonio.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/demonio.png" type="image/x-icon">
 
 <style> /*Css: Estilos visuales*/
     body{
         /*Fondo de pantalla*/
-        width: 2700px;
-        padding: 0px 10px;
-        margin: 50px ;
+        width: 1250px;
+        padding: 20px 100px;
+        margin: 0px ;
         text-align: center;
         background-image: url("img/fondo.png");
         background-repeat: no-repeat;
@@ -20,15 +20,15 @@
         }
     .game-container {
     display: grid;
-    margin: 10px auto;
+    margin: 10px auto ;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 80px;
-    padding: 150px;
-    width: 2500px;
+    grid-gap: 20px;
+    padding: 10px;
+    width: -5px;
     }
 
     .card {
-    border: 10px solid #ccc;
+    border: 1px solid #ed0a0a;
     padding: 80px;
     text-align: center;
     border-radius: 50%;
@@ -36,30 +36,93 @@
     background-image: no-repeat;
     background-size: cover;
     }
-
+    .card1{
+    border: 1px solid #ed0a0a;
+    padding: 80px;
+    text-align: center;
+    border-radius: 50%;
+    background-image: url(img/homero.png);
+    background-image: no-repeat;
+    background-size: cover;
+    }
+    .card2{
+    border: 1px solid #ed0a0a;
+    padding: 80px;
+    text-align: center;
+    border-radius: 50%;
+    background-image: url(img/ira.png);
+    background-image: no-repeat;
+    background-size: cover;
+    }
+    .card3{
+    border: 1px solid #ed0a0a;
+    padding: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background-image: url(img/sexis.png);
+    background-size: cover;
+    }
+    .card4{
+    border: 1px solid #ed0a0a;
+    padding: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background-image: url(img/no_bautizados.png);
+    background-image: no-repeat;
+    background-size: cover;
+    }
+    .card5{
+    border: 1px solid #ed0a0a;
+    padding: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background-image: url(img/homer-grande.png);
+    background-image: no-repeat;
+    background-size: cover;
+    }
 
 </style>
 
 </head>
 <body> <!--Html: Estructura Visual-->
+    <!--<div class="container">
+        <h1></h1>
+    </div> -->
     <!--Recuadro-->
-    <h1 style="color: rgb(241, 18, 18);box-shadow: 0 4px 25px 0 #0c0d0dbd;background-color: rgba(58, 19, 2, 0.016);">
+    <h1 style="color: hsla(0, 89%, 51%, 0.642);box-shadow: 0 4px 25px 0 #f5f9f99f;background-color: rgba(56, 3, 3, 0.486);">
         LA DIVINA COMEDIA
     </h1>
     <!--Tarjetas-->
     <div class="game-container">
-        <div class="card"><img src="img/avaricia.png"  alt=""></div>
-        <div class="card"><img src="img/homer-grande.png" width="40%" alt=""></div>
-        <div class="card"><img src="img/homero.png" width="40%" alt=""></div>
-        <div class="card"><img src="img/ira.png" width="40%" alt=""></div>
-        <div class="card"><img src="img/no_bautizados.png" width="40%" alt=""></div>
-        <div class="card"><img src="img/sexi.png" width="40%" alt=""></div>
-        <div class="card"><img src="img/avaricia.png" width="40%" alt=""></div>
-        <div class="card"><img src="img/homer-grande.png" width="40%" alt=""></div>
-        <div class="card"><img src="img/homero.png" width="40%" alt=""></div>
-        <div class="card"><img src="img/ira.png" width="40%" alt=""></div>
-        <div class="card"><img src="img/no_bautizados.png" width="40%" alt=""></div>
-        <div class="card"><img src="img/sexi.png" width="40%" alt=""></div>
+        <div class="card"></div>
+        <div class="card1"></div>
+        <div class="card2"></div>
+        <div class="card3"></div>
+        <div class="card4"></div>
+        <div class="card5"></div>
+        <div class="card"></div>
+        <div class="card1"></div>
+        <div class="card2"></div>
+        <div class="card3"></div>
+        <div class="card4"></div>
+        <div class="card5"></div>
+        
+        <div style="position: relative; left: 10px;top: 38px; display: contents;">
+            <p style="background-color: #ffffff; font-size: 15px;font-weight: bold;position: relative;float: left;">Encontrados: 
+                <span id="encontrados" style="color: red;font-weight: bold;">0</span>
+            </p>
+            <p style="background-color: #ffffff; font-size: 16px;font-weight: bold;position: relative;float: left;margin-left: 25px;">Reinicio 
+                <span id="reinicio" style="color: red;font-weight: bold;">;')</span>
+            </p>
+            <p style="background-color: #ffffff; font-size: 16px;font-weight: bold;position: relative;float: left;margin-left: 25px;">Salir: 
+                <span id="Salir" style="color: red;font-weight: bold;">:(</span>
+            </p>
+            <p style="background-color: #ffffff; font-size: 16px;font-weight: bold;position: relative;float: left;margin-left: 25px;">Intentos: 
+                <span id="intentos" style="color: red;font-weight: bold;">6</span>
+            </p>
+            
+        </div>
+    </div>
 
     <!--JS-->
 <script></script>

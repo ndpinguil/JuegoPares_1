@@ -10,7 +10,10 @@
             padding: 0px 10px;
             margin: 10px auto;
             text-align: center;
-            background-color: #ffeab9;
+            background-image: url("img/fondo.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
         }
         .flip-cartaTemporal-inner {
           position: relative;
@@ -30,26 +33,33 @@
         }
         .flip-cartaTemporal-front {
           background-color: #ffffff;
+          border-radius: 50%;
+          
         }
         .flip-cartaTemporal-back {
-          background-color: #ffffff;
+            border-radius: 50%;
+            text-align: center;
+            background-image: url(img/avaricia.png);
+            background-image: no-repeat;
+            background-size: cover;
           transform: rotateY(180deg);
         }
         </style>
     <title>Juego de Pares</title>
 </head>
 <body>
-    <h1 style="color: blue;box-shadow: 0 4px 8px 0 #0c0d0dbd;background-color: aquamarine;">
+    <h1 style="color: blue;box-shadow: 0 4px 8px 0 #0c0d0dbd;background-color: rgb(236, 244, 241);">
         Juego de pares
     </h1>
-    <div id="pantalla" 
-         style="width: 500px; height: 420px;background-color: aquamarine;position: relative;box-shadow: 0 4px 8px 0 #0c0d0dbd;">
+    <!--Tablero-->
+    <div id="pantalla"  
+         style="background-color: #ff06ff;position: relative;box-shadow: 0 4px 8px 0 #15d6d6bd;">
         <div id="ganaste" 
              style="position: absolute;left: 45px;top: 150px;font-size: 70px;font-weight: bold;color: #1900ca;display: none;">
               GANASTE !!! 
         </div>
         <div style="position: absolute;left: 10px;top: 380px;">
-            <p style="font-size: 16px;font-weight: bold;position: relative;float: left;">Encontrados: 
+            <p style="font-size: 16px;font-weight: bold;background-color: #ffffff; position: relative;float: left;">Encontrados: 
                 <span id="encontrados" style="color: red;font-weight: bold;">0</span>
             </p>
             <p style="font-size: 16px;font-weight: bold;position: relative;float: left;margin-left: 25px;">Faltantes: 
@@ -87,10 +97,10 @@
                 style="position: absolute;left: `+this.x+`px;top: `+this.y+`px; margin: 10px; width:`+this.w+`px; height:`+this.h+`px;">
                 <div class="flip-cartaTemporal-inner">
                     <div class="flip-cartaTemporal-front">
-                        <img src="`+this.imagenFrente+`" alt="AvatarF" style="width:`+this.w+`px;height:`+this.h+`px;">
+                        <img src="`+this.imagenFrente+`" alt="Tarjeta" style="width:`+this.w+`px;height:`+this.h+`px;">
                     </div>
                     <div class="flip-cartaTemporal-back">
-                        <img src="`+this.imagenAtras+`" alt="AvatarB" style="width:`+this.w+`px;height:`+this.h+`px;">
+                        <img src="`+this.imagenAtras+`" alt="Tarjeta" style="width:`+this.w+`px;height:`+this.h+`px;">
                     </div>
                 </div>
             </div> 
